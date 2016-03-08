@@ -7,13 +7,52 @@
 
 
 @import 'box-sizing';
-
-body {
-  background: url('img/bg.png') no-repeat top center fixed;
-  background-size: cover;
-}
+@import 'base';
+@import 'variables';
 
 .modal-container {
+  display: flex;
   position: fixed;
-  background: #0040ff;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: $gutter;
+  background: $background-haze;
+}
+
+.card {
+  width: 70%;
+  padding: $gutter;
+  background: $card-background;
+}
+
+.card-field-top {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  min-width: 90%;
+  padding: $gutter;
+}
+
+.card-field-bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  min-width: 90%;
+  padding: $gutter;
+}
+
+.form-field-label {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 2rem;
+  border-bottom: $brand-shadow;
+  color: $label-color;
+}
+
+.save-button {
+  float: right;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
 }
