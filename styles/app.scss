@@ -12,38 +12,23 @@
 
 .modal-container {
   display: flex;
-  position: fixed;
   justify-content: center;
   min-width: 100vw;
   min-height: 100vh;
-  padding: $gutter;
+  padding: 7rem;
   background: $background-haze;
   color: $text-color;
 }
 
 .card {
   width: 70vw;
+  height: 80%;
   padding: $gutter;
   background: $card-background;
 }
 
 .card-field {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.card-field-top {
-  display: flex;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  min-width: 90%;
-  padding: $gutter;
-}
-
-.card-field-bottom {
-  display: flex;
-  flex-grow: 1;
   flex-wrap: wrap;
   min-width: 90%;
   padding: $gutter;
@@ -53,8 +38,6 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  // width: 100%;
-  max-width: 15rem;
   padding: 2rem;
   border-bottom: $brand-shadow;
   color: $label-color;
