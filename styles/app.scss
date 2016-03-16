@@ -24,7 +24,7 @@
 .card {
   width: 70vw;
   height: 80%;
-  padding: 2rem;
+  padding: $gutter;
   background: $brand-white;
   box-shadow: $brand-grey;
 }
@@ -45,6 +45,7 @@
   flex-direction: column;
   flex-grow: 1;
   min-width: 15rem;
+  max-width: 100%;
   padding: $gutter 0;
   border-bottom: $brand-grey;
   color: $brand-grey;
@@ -58,7 +59,7 @@
   display: flex;
   justify-content: flex-end;
   max-height: 2rem;
-  padding: $gutter;
+  padding: 0.5rem;
   border-top: 1px solid $brand-light-grey;
 }
 
@@ -69,7 +70,7 @@
   outline: none;
   background: $brand-primary;
   color: $brand-white;
-  font-size: 1.2rem;
+  font-size: $gutter;
 
 }
 
@@ -78,7 +79,8 @@
 }
 
 .form-field-input-text {
-  width: 90%;
+  width: 17rem;
+  max-width: 100%;
   border: 0;
   border-bottom: 2px solid $brand-light-grey;
   outline: none;
