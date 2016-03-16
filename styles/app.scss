@@ -10,71 +10,83 @@
 @import 'base';
 @import 'variables';
 
+
 .modal-container {
   display: flex;
   justify-content: center;
   min-width: 100vw;
   min-height: 100vh;
   padding: 5rem;
-  background: $background-haze;
-  color: $text-color;
+  background: $haze;
+  color: $brand-grey;
 }
 
 .card {
   width: 70vw;
   height: 80%;
-  padding: $gutter;
-  background: $card-background;
-  box-shadow: $brand-shadow;
+  padding: 2rem;
+  background: $brand-white;
+  box-shadow: $brand-grey;
+}
+
+.card-title-text {
+  margin: 0;
+  color: #000;
 }
 
 .card-field {
   display: flex;
   flex-wrap: wrap;
   min-width: 90%;
-  padding: $gutter;
 }
 
 .form-field-label {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: $gutter;
-  border-bottom: $brand-shadow;
-  color: $label-color;
+  min-width: 15rem;
+  padding: $gutter 0;
+  border-bottom: $brand-grey;
+  color: $brand-grey;
+}
+
+.card-bottom {
+  padding-bottom: 2rem;
 }
 
 .card-actions {
   display: flex;
   justify-content: flex-end;
-  max-height: $gutter;
+  max-height: 2rem;
   padding: $gutter;
-  border-top: 1px solid $button-background;
+  border-top: 1px solid $brand-light-grey;
 }
 
 .save-button {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border: 0;
   border-radius: 0.2rem;
   outline: none;
-  background: $button-background;
-  color: $card-background;
+  background: $brand-primary;
+  color: $brand-white;
   font-size: 1.2rem;
 
 }
 
+.form-field-label-text {
+  color: $brand-light-grey;
+}
+
 .form-field-input-text {
-  width: 100%;
-  min-width: $min-width;
-  height: $gutter;
+  width: 90%;
   border: 0;
-  border-bottom: 2px solid $button-background;
+  border-bottom: 2px solid $brand-light-grey;
   outline: none;
   background: none;
-  color: $text-color;
+  color: $brand-grey;
   font-size: 1.2rem;
 }
 
 ::-webkit-input-placeholder {
-  color: $text-color;
+  color: $brand-light-grey;
 }
