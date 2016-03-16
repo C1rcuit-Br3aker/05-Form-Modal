@@ -3,4 +3,92 @@
 
 // $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 // @import "font-awesome";
-@import "box-sizing";
+
+
+
+@import 'box-sizing';
+@import 'base';
+@import 'variables';
+
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 5rem;
+  background: $haze;
+  color: $brand-grey;
+}
+
+.card {
+  width: 70vw;
+  height: 80%;
+  padding: $gutter;
+  background: $brand-white;
+  box-shadow: $brand-grey;
+}
+
+.card-title-text {
+  margin: 0;
+  color: #000;
+}
+
+.card-field {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 90%;
+}
+
+.form-field-label {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 15rem;
+  max-width: 100%;
+  padding: $gutter 0;
+  border-bottom: $brand-grey;
+  color: $brand-grey;
+}
+
+.card-bottom {
+  padding-bottom: 2rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  max-height: 2rem;
+  padding: 0.5rem;
+  border-top: 1px solid $brand-light-grey;
+}
+
+.save-button {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.2rem;
+  outline: none;
+  background: $brand-primary;
+  color: $brand-white;
+  font-size: $gutter;
+
+}
+
+.form-field-label-text {
+  color: $brand-light-grey;
+}
+
+.form-field-input-text {
+  width: 17rem;
+  max-width: 100%;
+  border: 0;
+  border-bottom: 2px solid $brand-light-grey;
+  outline: none;
+  background: none;
+  color: $brand-grey;
+  font-size: 1.2rem;
+}
+
+::-webkit-input-placeholder {
+  color: $brand-light-grey;
+}
